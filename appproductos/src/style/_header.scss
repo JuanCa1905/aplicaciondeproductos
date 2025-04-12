@@ -1,0 +1,42 @@
+@use './variables' as *;
+
+header {
+  background-color: #f8f9fa; // Un gris claro de fondo
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: sticky; // O fixed si quieres que siempre esté visible
+  top: 0;
+  z-index: 100; // Asegura que esté por encima de otros elementos
+
+  h1 {
+    font-size: 1.5rem;
+    color: $primary-color;
+    margin: 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    span {
+      margin-left: 0.5rem;
+      font-weight: 600;
+    }
+  }
+
+  .cart-icon {
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+    color: $primary-color; // Puedes darle un color específico al icono
+  }
+}

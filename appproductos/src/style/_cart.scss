@@ -1,0 +1,61 @@
+@use './variables' as *;
+
+.cart {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+    }
+  
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+  
+    button {
+      background-color: #ff4c4c;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #e04343;
+      }
+    }
+  
+    .total {
+      margin-top: 1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: #007bff;
+    }
+  }
